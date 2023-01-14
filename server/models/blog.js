@@ -18,7 +18,7 @@ const blogSchema = new Schema({
     type: Array,
     require: true,
   },
-  disadavntages: {
+  disadvantages: {
     type: Array,
     require: true,
   },

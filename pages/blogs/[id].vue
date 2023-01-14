@@ -1,5 +1,7 @@
 <template>
-  <div class="container mx-auto flex flex-col items-center p-6 leading-loose">
+  <div
+    class="container mx-auto flex flex-col items-center p-6 leading-loose relative"
+  >
     <Head>
       <Title>{{ blog.title }}</Title>
       <Meta name="description" :content="blog.intro" />
@@ -22,7 +24,7 @@
     <div class="mt-4 md:w-3/4">
       <h2 class="underline text-xl mb-2">Disadvantages</h2>
       <ul class="mb-6">
-        <li v-for="(disadvantage, index) in blog.disadavntages" :key="index">
+        <li v-for="(disadvantage, index) in blog.disadvantages" :key="index">
           <span class="text-black text-xl">{{ index + 1 }}</span> -
           {{ disadvantage }}
         </li>
@@ -40,7 +42,7 @@
 
     <!--products-->
 
-    <div class="container flex justify-center mt-10">
+    <div class="container flex justify-center mt-10 gap-12">
       <product-card
         v-for="product in blog.products"
         :key="product"

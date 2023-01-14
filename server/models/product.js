@@ -16,7 +16,7 @@ const productSchema = new Schema({
   store: {
     type: String,
   },
-  affiliatLink: {
+  affiliateLink: {
     type: String,
     require: true,
   },
