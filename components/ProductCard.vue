@@ -3,7 +3,7 @@
     class="w-72 shadow-md transition-all duration-300 rounded-md mb-6 mr-6"
     id="card"
   >
-    <span class="inline p-4">{{ product.country }}</span>
+    <!-- <span class="inline p-4">{{ product.country }}</span> -->
     <img
       class="w-3/4 ml-6 max-h-64 rounded-tr-lg rounded-tl-lg"
       :src="product.image"
@@ -29,6 +29,5 @@
 export default {
   name: "ProductCard",
   props: ["product"],
-  data() {},
 };
 </script>

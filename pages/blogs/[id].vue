@@ -33,6 +33,7 @@
 
     <!-- youtube video -->
     <iframe
+      v-if="blog.youtubeLink"
       :src="blog.youtubeLink"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
