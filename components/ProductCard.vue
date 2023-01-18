@@ -14,7 +14,7 @@
     </h2>
 
     <h2 class="text-center text-2xl mb-2 text-green-800">
-      {{ product.price }}
+      {{ !isNaN(+product.price) ? product.price + "$" : product.price }}
     </h2>
 
     <a
@@ -29,5 +29,6 @@
 export default {
   name: "ProductCard",
   props: ["product"],
+  data() {},
 };
 </script>
