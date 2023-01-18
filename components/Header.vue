@@ -3,7 +3,7 @@
     class="bg-gray-800 text-white flex items-center justify-between px-4 py-3"
   >
     <div>
-      <span class="text-2xl">Emperor Shaheen</span>
+      <NuxtLink to="/" class="text-2xl">Emperor Shaheen</NuxtLink>
     </div>
     <div class="relative w-64">
       <input

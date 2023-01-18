@@ -14,6 +14,9 @@ const blogSchema = new Schema({
     type: String,
     require: true,
   },
+  category: {
+    type: String,
+  },
   advantages: {
     type: Array,
     require: true,
