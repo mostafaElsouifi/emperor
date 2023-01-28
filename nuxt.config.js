@@ -1,7 +1,7 @@
 import dynamicRoutes from "./server/helpers/dynamicRoutes";
 let allRoutes = [];
-dynamicRoutes().then((d, allRoutes) => (allRoutes = d));
-console.log(allRoutes);
+dynamicRoutes().then((d) => (allRoutes = d));
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   runtimeConfig: {
