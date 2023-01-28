@@ -9,9 +9,7 @@
       :src="product.image"
       alt="Blog post image"
     />
-    <h2 class="p-4 m-0 text-lg">
-      {{ product.name.split(" ").slice(0, 5).join(" ") }}...
-    </h2>
+    <h2 class="p-4 m-0 text-lg">{{ product.name }}...</h2>
 
     <h2 class="text-center text-2xl mb-2 text-green-800">
       {{ !isNaN(+product.price) ? product.price + "$" : product.price }}
