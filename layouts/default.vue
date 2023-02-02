@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <meta
+  <Head>
+    <Meta
       name="google-site-verification"
       content="googlee803e2020fb0b755.html"
     />
-  </div>
+  </Head>
 
   <Header />
   <div>
