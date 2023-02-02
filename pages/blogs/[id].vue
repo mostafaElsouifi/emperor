@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center md:flex-row md:items-start">
-    <div class="mx-6 my-12">
+    <div class="mx-6 mt-12">
       <iframe
         v-for="product in blog.products"
         :key="product"
@@ -68,7 +68,7 @@
     </div>
 
     <!--select random products that have same category (3 products )-->
-    <div class="mx-6 my-12">
+    <div class="mx-6 mt-12">
       <iframe
         v-for="product in randomProducts"
         :key="product._id"
@@ -88,7 +88,6 @@ let blog;
 const route = useRoute();
 const { data } = await useFetch(`/api/blogs/${route.params.id}`);
 blog = data;
-
 let randomProducts;
 let pruducstUrls = await useFetch("/api/randProducts");
 pruducstUrls = pruducstUrls.data;
