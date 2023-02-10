@@ -30,6 +30,9 @@ export default defineNuxtConfig({
   },
 
   modules: ["@funken-studio/sitemap-nuxt-3"],
+  router: {
+    middleware: ["robots.txt"],
+  },
   sitemap: {
     hostname: "https://emperorshaheen.herokuapp.com/",
     cacheTime: 1,
