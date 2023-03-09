@@ -29,7 +29,18 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@funken-studio/sitemap-nuxt-3"],
+  modules: [
+    "@funken-studio/sitemap-nuxt-3",
+    [
+      "@nuxtjs/robots",
+      {
+        rules: {
+          UserAgent: "*",
+          Disallow: "",
+        },
+      },
+    ],
+  ],
 
   sitemap: {
     hostname: "https://emperorshaheen.herokuapp.com/",
