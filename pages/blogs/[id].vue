@@ -47,14 +47,14 @@
       </div>
 
       <!-- youtube video -->
-      <iframe
+      <!-- <iframe
         v-if="blog.youtubeLink"
         :src="blog.youtubeLink"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
         class="w-1/2 mb-6 mt-6 h-64 self-center"
-      ></iframe>
+      ></iframe> -->
       <!-- Google ads-->
       <!--products-->
 
